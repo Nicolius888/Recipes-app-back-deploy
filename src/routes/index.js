@@ -10,11 +10,11 @@ const { Recipe, Diet } = require("../db");
 
 const router = Router();
 
-router.use(
-  cors({
-    origin: "http://localhost:3000",
-  })
-);
+// router.use(
+//   cors({
+//     origin: "http://localhost:3000",
+//   })
+// );
 
 //FUNCTIONS/GETS/FILTERS TO USE IN ROUTES:
 
