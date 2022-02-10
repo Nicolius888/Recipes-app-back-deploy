@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const axios = require("axios");
 const cors = require("cors");
-const { PORT } = process.env;
+const { CORS_URL } = process.env;
 require("dotenv").config(); // dotenv package
 const { API_KEY } = process.env; // and, the .env file
 const { Recipe, Diet } = require("../db");
@@ -13,7 +13,7 @@ const router = Router();
 
 router.use(
   cors({
-    origin: PORT,
+    origin: CORS_URL,
   })
 );
 
