@@ -1,6 +1,6 @@
 const { Router } = require("express");
 const axios = require("axios");
-const cors = require("cors");
+// const cors = require("cors");
 require("dotenv").config(); // dotenv package
 const { API_KEY } = process.env; // and, the .env file
 const { Recipe, Diet } = require("../db");
